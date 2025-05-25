@@ -1,22 +1,24 @@
 /* Voz da Lei - Custom Styles */
 
 :root {
+    --primary-orange: #f48c06;
     --primary-blue: #2563eb; /* Vivid Blue */
     --secondary-blue: #60a5fa; /* Light Blue */
     --accent-blue: #38bdf8; /* Sky Blue */
-    --bg-light: #f1f5f9; /* Very Light Blue */
-    --bg-dark: #0f172a; /* Very Dark Blue */
-    --text-on-light: #0f172a; /* Very Dark Blue */
+    --accent-orange: #ffd45e; /* Sky Blue */
+    --bg-light: #fff; /* Very Light Blue */
+    --bg-dark: #16181f; /* Very Dark Blue */
+    --text-on-light: #1f1f1f;
     --text-on-dark: #f1f5f9; /* Very Light Blue */
-    --general-text: #1e293b; /* Slate Blue */
+    --general-text: #1f1f1f; /* Slate Blue */
     --success-color: #22d3ee; /* Cyan/Aqua */
     --footer-bg: #0f172a;
     --footer-link: #94a3b8;
     --footer-link-hover: #38bdf8;
     --navbar-brand: #2563eb;
 
-    --primary-color: var(--primary-blue);
-    --primary-hover-color: #1d4ed8;
+    --primary-color: var(--primary-orange);
+    --primary-hover-color: #db7c00;
     --light-bg-color: var(--bg-light);
     --dark-bg-color: var(--bg-dark);
     --text-on-light-bg: var(--text-on-light);
@@ -32,7 +34,7 @@
 /* General Styling */
 body {
     padding-top: 56px; /* Adjust for fixed navbar */
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #fff; /* Or var(--light-bg-color) for a global tint */
     color: var(--general-text-color);
 }
@@ -49,10 +51,17 @@ section.py-5 {
 }
 
 p {
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 1.25rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.7rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
     font-weight: 700; /* Bolder headings */
     color: var(--text-on-light-bg);
 }
@@ -92,10 +101,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 #hero-section {
     min-height: 90vh; /* Make it almost full screen */
-    background: url('../images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
     position: relative;
-    color: var(--text-on-dark-bg); /* Ensures text is light on dark overlay */
+    color: var(--text-on-light-bg); /* Ensures text is light on dark overlay */
 }
 
 #hero-section::before {
@@ -105,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    background-color: #fff2e1;
     z-index: 1;
 }
 
@@ -133,34 +140,19 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-on-light-bg); /* Ensure text contrasts with light background */
 }
 
-/* Features Section - Dark Theme & Row Layout */
-/* .features-section-dark removed for light theme rollback */
-    background: var(--dark-bg-color);
-    color: var(--text-on-dark-bg);
-}
-
-.features-section-dark .feature-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.features-section-dark .feature-item {
-    background: rgba(26, 19, 56, 0.85); /* slightly lighter than --dark-bg-color */
-    padding: 2rem 1.5rem;
-    flex: 1 1 0;
-    min-width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.feature-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
 }
 
 .feature-item i {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
+}
+
+.feature-item h3 {
+    font-family: 'Sora', sans-serif;
 }
 
 .feature-item h3,
@@ -177,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gradient highlight for headings */
 .highlight {
-    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue), var(--secondary-blue));
+    background: linear-gradient(90deg, var(--primary-orange), var(--accent-orange));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -240,6 +232,19 @@ h1, h2, h3, h4, h5, h6 {
 .product-card img {
     height: 200px;
     object-fit: cover;
+    filter: grayscale(1);
+    transition: all 0.25s ease;
+}
+
+.product-img img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff2e133;
+    z-index: 1;
 }
 
 .product-card .price {
@@ -250,6 +255,10 @@ h1, h2, h3, h4, h5, h6 {
 .product-card.placeholder-card {
     border-style: dashed;
     border-color: #ced4da; /* Keeping placeholder distinct, or use a variable */
+}
+
+.product-card:hover img {
+    filter: grayscale(0);
 }
 
 /* Final CTA Section */
