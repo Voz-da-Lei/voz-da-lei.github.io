@@ -1,8 +1,505 @@
-<html>
-	<head>
-	</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz da Lei - Leis em Áudio com IA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-	<body>
-		<h1>Hello world</h1>
-	</body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Voz da Lei</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero-section">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#optimize-time-section">Otimize Seu Tempo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#audio-quality-section">Qualidade de Áudio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features-section">Funcionalidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#advantages-section">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works-section">Como Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products-section">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3" href="#cta-final-section">Comece Agora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="hero-section" class="d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Revolucione Seus Estudos para Concursos com Leis em Áudio Potencializadas por IA!</h1>
+                    <p class="lead my-4">Transforme seu tempo ocioso em aprendizado produtivo. Ouça leis, resumos inteligentes e questões comentadas onde e quando quiser. A aprovação mais perto, no seu ritmo.</p>
+                    <a href="#products-section" class="btn btn-primary btn-lg">Conheça Nossos Produtos <i class="bi bi-play-circle-fill ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Optimize Time Section -->
+    <section id="optimize-time-section" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="fw-bold mb-4">Sua Preparação para Concursos Acaba de Ficar Mais Inteligente e Flexível.</h2>
+                    <p>Sabemos que a jornada até a aprovação exige dedicação e, principalmente, muito tempo de leitura de textos densos. E se você pudesse absorver o conteúdo essencial das leis de forma dinâmica, mesmo com a rotina corrida?</p>
+                    <p>Com a Voz da Lei, você aproveita cada minuto: no trânsito, na academia, enquanto realiza tarefas domésticas ou durante uma caminhada. Transforme momentos improdutivos em horas de estudo valiosas.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <img src="assets/images/optimize-time.jpg" class="img-fluid rounded shadow" alt="Estudante otimiza tempo para concursos ouvindo leis em áudio.">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Audio Quality Section -->
+    <section id="audio-quality-section" class="py-5 bg-light">
+        <div class="container text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="fw-bold mb-4">Experimente a Clareza da Narração Inteligente.</h2>
+                <p class="lead mb-5">Utilizamos a mais avançada tecnologia Text-to-Speech do Google, aprimorada para oferecer uma experiência auditiva natural e agradável. Diga adeus às vozes robotizadas e mergulhe no conteúdo sem distrações.</p>
+            </div>
+            <div class="audio-player-container mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <h5 class="fw-semibold">Demonstração Voz da Lei</h5>
+                <p class="mb-2"><small>Ouça um trecho e comprove a qualidade da nossa narração por Inteligência Artificial.</small></p>
+                <audio controls class="w-100">
+                    <source src="assets/audio/demonstracao.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p class="mt-2"><small>Qualidade que facilita a compreensão e a retenção do conteúdo.</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Features Section - Dark Theme, Row Layout, Highlight -->
+    <section id="features-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="fw-bold">Estudo Eficiente e Acessível com o <span class="highlight">Poder da Inteligência Artificial</span>.</h2>
+                <p class="lead">A Voz da Lei oferece materiais de estudo em áudio criados especificamente para concurseiros brasileiros. Nosso foco é transformar leis e conteúdos essenciais em formatos de fácil consumo, com diferenciais que aceleram seu aprendizado.</p>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <i class="bi bi-book-half mb-3"></i>
+                    <h3 class="fs-5 fw-semibold">Leis Completas em Áudio</h3>
+                    <p>Acesse o texto integral das principais leis cobradas em concursos, narradas de forma clara e precisa por nossa IA. Ideal para revisões e primeiro contato com a matéria.</p>
+                </div>
+                <div class="feature-item mb-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <i class="bi bi-lightbulb-fill mb-3"></i>
+                    <h3 class="fs-5 fw-semibold">Resumos Inteligentes por IA</h3>
+                    <p>A cada seção ou capítulo importante, nossa IA gera e narra um resumo dos pontos-chave, facilitando a fixação e a compreensão do conteúdo que acabou de ser ouvido.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <i class="bi bi-patch-check-fill mb-3"></i>
+                    <h3 class="fs-5 fw-semibold">Questões de Concurso em Áudio</h3>
+                    <p>Ao final de cada lei (ou grandes blocos), pratique com questões de concursos anteriores narradas, muitas delas com gabarito e comentários (quando disponível), para testar seu conhecimento e se familiarizar com o estilo da banca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Advantages Section -->
+    <section id="advantages-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="fw-bold">Por que Escolher a Voz da Lei?</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cash-coin display-4 mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold">Custo-Benefício Imbatível</h3>
+                            <p class="card-text">Acesso a materiais de alta qualidade por um preço justo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-phone-fill display-4 mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold">Acesse de Onde Quiser</h3>
+                            <p class="card-text">Estude no celular, tablet ou computador, online ou offline.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-robot display-4 mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold">Narração por IA de Ponta</h3>
+                            <p class="card-text">Voz natural e clara para uma audição agradável e focada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bullseye display-4 mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold">Foco no Essencial</h3>
+                            <p class="card-text">Conteúdo direcionado para o que realmente importa na sua prova.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cloud-arrow-down-fill display-4 mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold">Atualizações Constantes</h3>
+                            <p class="card-text">Materiais sempre em dia com as últimas alterações legislativas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6th Advantage Item -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-headset display-4 mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold">Suporte Especializado</h3>
+                            <p class="card-text">Equipe pronta para ajudar em dúvidas sobre materiais e uso da plataforma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. How It Works Section -->
+    <section id="how-it-works-section" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="fw-bold">Comece a Estudar em Minutos!</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="step-item">
+                        <div class="step-icon-container mb-3">
+                            <i class="bi bi-search display-4"></i>
+                            <span class="step-number">1</span>
+                        </div>
+                        <h3 class="fs-5 fw-semibold">Escolha sua Lei</h3>
+                        <p>Navegue em nosso catálogo e selecione o material em áudio que você precisa para seu concurso. (Ex: Regimento Interno do TCU).</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="step-item">
+                        <div class="step-icon-container mb-3">
+                            <i class="bi bi-credit-card-2-front-fill display-4"></i>
+                            <span class="step-number">2</span>
+                        </div>
+                        <h3 class="fs-5 fw-semibold">Adquira com Segurança</h3>
+                        <p>Compra rápida e segura. Após a confirmação, o acesso ao áudio é liberado imediatamente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="step-item">
+                        <div class="step-icon-container mb-3">
+                            <i class="bi bi-headphones display-4"></i>
+                            <span class="step-number">3</span>
+                        </div>
+                        <h3 class="fs-5 fw-semibold">Ouça e Aprenda!</h3>
+                        <p>Acesse pela nossa plataforma (ou receba o link para download/streaming) e comece a transformar seu tempo em conhecimento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Products Section -->
+    <section id="products-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="fw-bold">Confira Nossos Primeiros Lançamentos</h2>
+            </div>
+            <div class="row">
+                <!-- Product Card Example 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="card product-card h-100 shadow">
+                        <img src="assets/images/product-tcu.jpg" class="card-img-top" alt="Capa Regimento Interno TCU">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title fs-5 fw-semibold">Regimento Interno do TCU em Áudio + Resumos IA + Questões</h3>
+                            <p class="card-text flex-grow-1">Áudio completo do Regimento, atualizado, com resumos inteligentes por IA ao final de cada Título/Capítulo e XX questões de concursos anteriores narradas.</p>
+                            <p class="fw-bold fs-4 text-primary">R$ 19,90</p>
+                            <a href="regimento-tcu-2025/index.html" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card Example 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card product-card h-100 shadow">
+                        <img src="assets/images/product-senado.jpg" class="card-img-top" alt="Capa Regimento Interno Senado">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title fs-5 fw-semibold">Regimento Interno do Senado Federal em Áudio + Resumos IA + Questões</h3>
+                            <p class="card-text flex-grow-1">Áudio completo do Regimento, atualizado, com resumos inteligentes por IA ao final de cada Título/Capítulo e YY questões de concursos anteriores narradas.</p>
+                            <p class="fw-bold fs-4 text-primary">R$ 24,90</p>
+                            <a href="#" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards as needed -->
+                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="card product-card h-100 shadow placeholder-card">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class="bi bi-plus-circle-dotted display-3 text-muted mb-3"></i>
+                            <h3 class="card-title fs-5 fw-semibold text-muted">Mais Produtos em Breve</h3>
+                            <p class="card-text text-center text-muted">Estamos trabalhando para trazer mais conteúdos para você!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <a href="#" class="btn btn-outline-primary btn-lg">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Final CTA Section -->
+    <section id="cta-final-section" class="py-5 text-white text-center">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="display-5 fw-bold">Pronto para Dar um Upgrade nos Seus Estudos?</h2>
+            <a href="#products-section" class="btn btn-light btn-lg fw-semibold">Escolha Sua Lei em Áudio Agora!</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light" id="faq-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">FAQ – Perguntas Frequentes <span class="highlight">| Voz da Lei</span></h2>
+            </div>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                            1. O que é a "Voz da Lei"?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A "Voz da Lei" é uma iniciativa que transforma leis e normativos importantes para concursos públicos brasileiros em materiais de estudo em áudio. Nosso objetivo é ajudar você, concurseiro, a otimizar seu tempo de estudo, aproveitando cada momento para aprender de forma flexível, acessível e com o auxílio de Inteligência Artificial.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            2. Como os áudios das leis são criados? A narração é feita por pessoas reais?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nossos áudios são produzidos utilizando a mais avançada tecnologia Text-to-Speech (TTS) do Google. Isso nos permite oferecer uma narração com voz clara, natural e de excelente qualidade, muito próxima da humana, garantindo uma experiência de audição agradável e eficaz para seus estudos. Você pode ouvir uma demonstração na página de cada produto!
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            3. Como a Inteligência Artificial (IA) é utilizada nos produtos da "Voz da Lei"?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A IA é uma ferramenta poderosa que integramos para enriquecer seu aprendizado! Utilizamos Inteligência Artificial para:<br>
+                            <ul>
+                                <li>Gerar resumos parciais inteligentes ao longo do áudio da lei, destacando os pontos-chave para facilitar a compreensão e fixação.</li>
+                                <li>Ler as questões de concurso selecionadas que acompanham o material, permitindo que você pratique e teste seus conhecimentos de forma auditiva.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            4. Para quem são os produtos da "Voz da Lei"?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nossos materiais são pensados especialmente para você, concurseiro(a) brasileiro(a), que:
+                            <ul>
+                                <li>Deseja otimizar o tempo, estudando em trânsito, na academia, ou enquanto realiza outras tarefas.</li>
+                                <li>Busca uma forma complementar de estudo, aliando o áudio à leitura.</li>
+                                <li>Quer revisar conteúdos de forma dinâmica e repetida.</li>
+                                <li>Precisa de um material acessível e focado em leis específicas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                            5. Como funciona a compra e o acesso inicial ao material em áudio?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            É muito simples e seguro!
+                            <ol>
+                                <li>Escolha o produto (a lei em áudio) desejado em nosso site e clique em "Comprar Agora".</li>
+                                <li>Você será direcionado para a página de checkout 100% segura da Hotmart, uma das maiores e mais confiáveis plataformas de produtos digitais do Brasil, onde poderá finalizar sua compra com tranquilidade.</li>
+                                <li>Após a confirmação do pagamento pela Hotmart, o acesso ao material para audição online é liberado imediatamente em sua área de membros!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                            6. Como e quando poderei baixar os arquivos de áudio?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Após a confirmação da sua compra, você terá acesso imediato para ouvir todo o conteúdo online. Para organizar os downloads, pensamos em uma forma justa para todos: uma parte significativa do conteúdo estará disponível para download logo após a compra. Para que você possa explorar o material com calma e nós possamos proteger nosso trabalho, o restante dos arquivos para download será liberado automaticamente após o período de 7 dias da garantia legal de compra. Agradecemos sua compreensão! Esta prática nos ajuda a manter a qualidade e os preços acessíveis que você merece.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 7 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                            7. O acesso aos áudios expira? Posso ouvir quantas vezes quiser?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Não se preocupe, o acesso aos arquivos baixados não expira! Uma vez que os arquivos MP3 (ou o formato disponibilizado) são baixados e estão com você, eles são seus para ouvir quando, onde e quantas vezes quiser, sem qualquer limite de reprodução ou prazo de validade. Organize seus estudos no seu ritmo e em seus dispositivos preferidos!
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 8 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+                            8. Qual o grande diferencial da "Voz da Lei"?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nosso principal diferencial é combinar a praticidade do estudo por áudio com o poder da Inteligência Artificial, oferecendo resumos e questões narradas por IA para otimizar sua compreensão e retenção do conteúdo. Tudo isso com foco em produtos específicos (você compra só a lei que precisa) e a um preço justo e acessível, democratizando o acesso a ferramentas de estudo de qualidade.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 9 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+                            9. Posso experimentar a qualidade do áudio antes de comprar?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse9" class="accordion-collapse collapse" aria-labelledby="faqHeading9" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Com certeza! Entendemos a importância de você conhecer a qualidade da nossa narração. Em cada página de produto, você encontrará um player com uma amostra grátis do áudio, incluindo um trecho da lei e um exemplo de resumo por IA. Assim, você pode comprar com total confiança!
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 10 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeading10">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+                            10. Tenho mais dúvidas ou preciso de ajuda. Como entro em contato?
+                        </button>
+                    </h3>
+                    <div id="faqCollapse10" class="accordion-collapse collapse" aria-labelledby="faqHeading10" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Estamos aqui para te ajudar! Se você tiver qualquer outra pergunta ou precisar de suporte, por favor, entre em contato conosco através do formulário na nossa página "Contato" ou envie um e-mail para <a href="mailto:contato@vozdalei.com.br" class="text-primary">contato@vozdalei.com.br</a>. Nossa equipe responderá o mais rápido possível.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Voz da Lei</h5>
+                    <p><small>Transformando a maneira como você estuda para concursos.</small></p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contato / Suporte</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Termos de Uso</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Nossos Produtos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Regimento Interno TCU</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Regimento Interno Senado</a></li>
+                        <li><a href="#products-section" class="text-white text-decoration-none">Ver todos...</a></li>
+                    </ul>
+                    <!-- Optional Social Icons -->
+                    <!-- 
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <hr class="my-4" style="border-top-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0"><small>&copy; 2025 Voz da Lei. Todos os direitos reservados.</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

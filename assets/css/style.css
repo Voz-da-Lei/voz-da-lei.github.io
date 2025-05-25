@@ -1,0 +1,300 @@
+/* Voz da Lei - Custom Styles */
+
+:root {
+    --primary-blue: #2563eb; /* Vivid Blue */
+    --secondary-blue: #60a5fa; /* Light Blue */
+    --accent-blue: #38bdf8; /* Sky Blue */
+    --bg-light: #f1f5f9; /* Very Light Blue */
+    --bg-dark: #0f172a; /* Very Dark Blue */
+    --text-on-light: #0f172a; /* Very Dark Blue */
+    --text-on-dark: #f1f5f9; /* Very Light Blue */
+    --general-text: #1e293b; /* Slate Blue */
+    --success-color: #22d3ee; /* Cyan/Aqua */
+    --footer-bg: #0f172a;
+    --footer-link: #94a3b8;
+    --footer-link-hover: #38bdf8;
+    --navbar-brand: #2563eb;
+
+    --primary-color: var(--primary-blue);
+    --primary-hover-color: #1d4ed8;
+    --light-bg-color: var(--bg-light);
+    --dark-bg-color: var(--bg-dark);
+    --text-on-light-bg: var(--text-on-light);
+    --text-on-dark-bg: var(--text-on-dark);
+    --general-text-color: var(--general-text);
+    --footer-bg-color: var(--footer-bg);
+    --footer-link-color: var(--footer-link);
+    --footer-link-hover-color: var(--footer-link-hover);
+    --navbar-brand-color: var(--navbar-brand);
+}
+
+
+/* General Styling */
+body {
+    padding-top: 56px; /* Adjust for fixed navbar */
+    font-family: 'Manrope', sans-serif;
+    background-color: #fff; /* Or var(--light-bg-color) for a global tint */
+    color: var(--general-text-color);
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Override Bootstrap's py-5 if sections also have it, to ensure consistency */
+section.py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bolder headings */
+    color: var(--text-on-light-bg);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-on-dark-bg);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-hover-color);
+    border-color: var(--primary-hover-color);
+    color: var(--text-on-dark-bg);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--primary-color);
+    color: var(--text-on-dark-bg);
+    border-color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Bootstrap Override for .bg-light */
+.bg-light {
+    background-color: var(--light-bg-color) !important;
+}
+
+/* Hero Section */
+#hero-section {
+    min-height: 90vh; /* Make it almost full screen */
+    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: var(--text-on-dark-bg); /* Ensures text is light on dark overlay */
+}
+
+#hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    z-index: 1;
+}
+
+#hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optimize Time Section */
+#optimize-time-section img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Audio Quality Section */
+#audio-quality-section .audio-player-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#audio-quality-section h5,
+#audio-quality-section small {
+    color: var(--text-on-light-bg); /* Ensure text contrasts with light background */
+}
+
+/* Features Section - Dark Theme & Row Layout */
+/* .features-section-dark removed for light theme rollback */
+    background: var(--dark-bg-color);
+    color: var(--text-on-dark-bg);
+}
+
+.features-section-dark .feature-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.features-section-dark .feature-item {
+    background: rgba(26, 19, 56, 0.85); /* slightly lighter than --dark-bg-color */
+    padding: 2rem 1.5rem;
+    flex: 1 1 0;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.feature-item h3,
+.feature-item p {
+    color: var(--text-on-light-bg);
+}
+
+@media (max-width: 991px) {
+    .feature-row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Gradient highlight for headings */
+.highlight {
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue), var(--secondary-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.feature-item i {
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover i {
+    transform: scale(1.1);
+}
+
+.feature-item i,
+#advantages-section .card-body i,
+.step-item .step-icon-container i {
+    color: var(--primary-color);
+}
+
+/* Advantages Section */
+#advantages-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#advantages-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* How It Works Section */
+.step-item .step-icon-container {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.step-item .step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+/* Products Section */
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .price {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.product-card.placeholder-card {
+    border-style: dashed;
+    border-color: #ced4da; /* Keeping placeholder distinct, or use a variable */
+}
+
+/* Final CTA Section */
+#cta-final-section {
+    background-color: var(--dark-bg-color);
+    color: var(--text-on-dark-bg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-on-dark-bg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+    color: var(--footer-link-hover-color);
+}
+
+.social-icons a {
+    color: var(--footer-link-color);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: var(--footer-link-hover-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero-section {
+        min-height: 70vh;
+    }
+    #hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
