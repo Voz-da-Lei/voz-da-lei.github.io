@@ -22,7 +22,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Voz da Lei</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/svg/logo.svg" alt="Voz da Lei">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -89,20 +91,58 @@
     </section>
 
     <!-- 3. Audio Quality Section -->
-    <section id="audio-quality-section" class="py-5 bg-light">
+    <section id="audio-quality-section" class="py-5 bg-light">        
+        <div class="blur-left"></div>
+        <div class="blur-right"></div>
         <div class="container text-center">
             <div data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="fw-bold mb-4">Experimente a clareza da <span class="highlight">Narração Inteligente</span>.</h2>
                 <p class="mb-5">Utilizamos a mais avançada tecnologia Text-to-Speech do Google, aprimorada para oferecer uma experiência auditiva <span class="fw-bold">natural e agradável</span>.</p>
             </div>
-            <div class="audio-player-container mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <h5 class="fw-semibold">Demonstração Voz da Lei</h5>
-                <p class="mb-2"><small>Ouça um trecho e comprove a qualidade da nossa narração por Inteligência Artificial.</small></p>
-                <audio controls class="w-100">
-                    <source src="assets/audio/demonstracao.mp3" type="audio/mpeg">
-                    Seu navegador não suporta o elemento de áudio.
-                </audio>
-                <p class="mt-2"><small>Qualidade que facilita a compreensão e a retenção do conteúdo.</small></p>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="audio-player-container mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="grid"></div>
+                        <h5 class="fw-semibold">
+                            <img src="assets/svg/ai.svg" alt="AI" style="width: 40px; margin-right: 6px;">
+                            Demonstração <span class="highlight">#1</span>
+                        </h5>
+                        <p class="mb-3"><small>Ouça um trecho e comprove a nossa <span class="highlight">qualidade</span></small></p>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/demonstracao.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="audio-player-container mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="grid"></div>
+                        <h5 class="fw-semibold">
+                            <img src="assets/svg/ai.svg" alt="AI" style="width: 40px; margin-right: 6px;">
+                            Demonstração <span class="highlight">#2</span>
+                        </h5>
+                        <p class="mb-3"><small>Ouça mais um trecho e ateste nossa <span class="highlight">qualidade</span></small></p>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/demonstracao.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="audio-player-container mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="grid"></div>
+                        <h5 class="fw-semibold">
+                            <img src="assets/svg/ai.svg" alt="AI" style="width: 40px; margin-right: 6px;">
+                            Demonstração <span class="highlight">#3</span>
+                        </h5>
+                        <p class="mb-3"><small>Agora tenha certeza da nossa <span class="highlight">qualidade</span></small></p>
+                        <audio controls class="w-100">
+                            <source src="assets/audio/demonstracao.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -307,9 +347,13 @@
 
     <!-- 8. Final CTA Section -->
     <section id="cta-final-section" class="py-5 text-white text-center">
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
-            <h2 class="display-5 fw-bold">Pronto para Dar um Upgrade nos Seus Estudos?</h2>
-            <a href="#products-section" class="btn btn-light btn-lg fw-semibold">Escolha Sua Lei em Áudio Agora!</a>
+        <div class="container">
+            <div class="grid z-1"></div>
+            <div class="blur-left opacity-50"></div>
+            <div class="z-3 position-relative" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="display-5 fw-bold mb-5">Que tal dar um <span class="highlight">upgrade</span> nos seus estudos?</h2>
+                <a href="#products-section" class="btn btn-primary btn-lg fw-light">Escolha sua Lei em áudio agora!</a>
+            </div>
         </div>
     </section>
 
