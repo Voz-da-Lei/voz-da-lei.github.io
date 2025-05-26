@@ -58,6 +58,11 @@ p {
     font-weight: 300;
 }
 
+ul li, ol li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
 h1 {
     font-size: 2.7rem;
 }
@@ -113,9 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 #hero-section {
-    min-height: 90vh; /* Make it almost full screen */
     position: relative;
-    color: var(--text-on-light-bg); /* Ensures text is light on dark overlay */
+    color: var(--text-on-light-bg);
 }
 
 #hero-section::before {
@@ -134,10 +138,75 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
+#hero-section .hero-images {
+    position: relative;
+}
+
+#hero-section .hero-images img.floating-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#hero-section .hero-images img.floating-img:nth-child(2) {
+    animation-name: float1;
+    animation-delay: 0s;
+}
+#hero-section .hero-images img.floating-img:nth-child(3) {
+    animation-name: float2;
+    animation-delay: 2s;
+}
+#hero-section .hero-images img.floating-img:nth-child(4) {
+    animation-name: float3;
+    animation-delay: 1s;
+}
+#hero-section .hero-images img.floating-img:nth-child(5) {
+    animation-name: float4;
+    animation-delay: 3s;
+}
+#hero-section .hero-images img.floating-img:nth-child(6) {
+    animation-name: float5;
+    animation-delay: 1.5s;
+}
+
+@keyframes float1 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-24px) scale(1.03); }
+    100% { transform: translateY(0px); }
+}
+@keyframes float2 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-18px) scale(1.01); }
+    100% { transform: translateY(0px); }
+}
+@keyframes float3 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-30px) scale(1.04); }
+    100% { transform: translateY(0px); }
+}
+@keyframes float4 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px) scale(1.02); }
+    100% { transform: translateY(0px); }
+}
+@keyframes float5 {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-22px) scale(1.03); }
+    100% { transform: translateY(0px); }
+}
+
 /* Optimize Time Section */
+#optimize-time-section {
+    padding: 6rem 0;
+}
+
 #optimize-time-section img {
-    max-height: 400px;
-    object-fit: cover;
+    max-width: 400px;
+    object-fit: cover;    
+    border-radius: 32px;
 }
 
 /* Audio Quality Section */
