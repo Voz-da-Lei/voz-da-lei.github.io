@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+{% if site.products.size > 0 %}
+  <ul>
+    {% for product in site.products %}
+      <li>
+        <a href="{{ product.url | relative_url }}">
+          {{ product.title | default: "Produto sem título" }}
+        </a>
+        </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Nenhum produto encontrado na coleção.</p>
+{% endif %}

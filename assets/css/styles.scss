@@ -1,0 +1,462 @@
+---
+---
+:root {
+  --primary-orange: #f48c06;
+  --primary-blue: #2563eb; /* Vivid Blue */
+  --secondary-blue: #60a5fa; /* Light Blue */
+  --accent-blue: #38bdf8; /* Sky Blue */
+  --accent-orange: #ffd45e; /* Sky Blue */ // Nota: Comentário original diz "Sky Blue", mas a cor é laranja.
+  --bg-light: #fff; /* Very Light Blue */
+  --bg-dark: #16181f; /* Very Dark Blue */
+  --text-on-light: #1f1f1f;
+  --text-on-dark: #f1f5f9; /* Very Light Blue */
+  --general-text: #1f1f1f; /* Slate Blue */
+  --success-color: #22d3ee; /* Cyan/Aqua */
+  --footer-bg: #0f172a;
+  --footer-link: #94a3b8;
+  --footer-link-hover: #38bdf8;
+  --navbar-brand: #2563eb;
+
+  --primary-color: var(--primary-orange);
+  --primary-hover-color: #db7c00;
+  --light-bg-color: var(--bg-light);
+  --dark-bg-color: var(--bg-dark);
+  --text-on-light-bg: var(--text-on-light);
+  --text-on-dark-bg: var(--text-on-dark);
+  --general-text-color: var(--general-text);
+  --footer-bg-color: var(--footer-bg);
+  --footer-link-color: var(--footer-link);
+  --footer-link-hover-color: var(--footer-link-hover);
+  --navbar-brand-color: var(--navbar-brand);
+  --text-bg-primary: var(--primary-orange);
+}
+
+
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff; /* Or var(--light-bg-color) for a global tint */
+  color: var(--general-text-color);
+}
+
+section {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+
+  // Override Bootstrap's py-5 if sections also have it, to ensure consistency
+  &.py-5 {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+  }
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+ul, ol {
+  li {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+  }
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700; /* Bolder headings */
+  color: var(--text-on-light-bg);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-on-dark-bg);
+
+  &:hover, &:focus {
+      background-color: var(--primary-hover-color);
+      border-color: var(--primary-hover-color);
+      color: var(--text-on-dark-bg);
+  }
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+
+  &:hover, &:focus {
+      background-color: var(--primary-color);
+      color: var(--text-on-dark-bg);
+      border-color: var(--primary-color);
+  }
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.grid {
+  background-image: url("../img/grid-bg.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .35;
+}
+
+/* Bootstrap Override for .bg-light */
+.bg-light {
+  background-color: var(--light-bg-color) !important;
+}
+
+/* Hero Section */
+#hero-section {
+  position: relative;
+  color: var(--text-on-light-bg);
+
+  &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff2e1;
+      z-index: 1;
+  }
+
+  .container {
+      position: relative;
+      z-index: 2;
+  }
+
+  .hero-images {
+      position: relative;
+
+      img.floating-img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          animation-duration: 8s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+
+          &:nth-child(2) {
+              animation-name: float1;
+              animation-delay: 0s;
+          }
+          &:nth-child(3) {
+              animation-name: float2;
+              animation-delay: 2s;
+          }
+          &:nth-child(4) {
+              animation-name: float3;
+              animation-delay: 1s;
+          }
+          &:nth-child(5) {
+              animation-name: float4;
+              animation-delay: 3s;
+          }
+          &:nth-child(6) {
+              animation-name: float5;
+              animation-delay: 1.5s;
+          }
+      }
+  }
+
+  @media (max-width: 768px) {
+      min-height: 70vh;
+      h1 {
+          font-size: 2.5rem;
+      }
+  }
+}
+
+@keyframes float1 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-24px) scale(1.03); }
+  100% { transform: translateY(0px); }
+}
+@keyframes float2 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px) scale(1.01); }
+  100% { transform: translateY(0px); }
+}
+@keyframes float3 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-30px) scale(1.04); }
+  100% { transform: translateY(0px); }
+}
+@keyframes float4 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px) scale(1.02); }
+  100% { transform: translateY(0px); }
+}
+@keyframes float5 {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-22px) scale(1.03); }
+  100% { transform: translateY(0px); }
+}
+
+/* Optimize Time Section */
+#optimize-time-section {
+  padding: 6rem 0;
+
+  img {
+      max-width: 400px;
+      object-fit: cover;    
+      border-radius: 32px;
+  }
+}
+
+/* Audio Quality Section */
+#audio-quality-section {
+  padding: 6rem 0 !important;
+
+  .audio-player-container {
+      background-color: #222;
+      padding: 30px 35px 40px 35px;
+      border-radius: 24px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      z-index: 999;
+      position: relative;
+  }
+
+  h5,
+  small {
+      color: var(--text-on-dark-bg); /* Ensure text contrasts with light background */
+  }
+}
+
+.blur-left {
+  position: absolute;
+  top: 35%;
+  left: -50%;
+  width: 70%;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f48c0688;
+  z-index: 0;
+  filter: blur(73px);
+}
+
+.blur-right {
+  position: absolute;
+  top: 40%;
+  right: -50%;
+  width: 70%;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f48c0655;
+  z-index: 0;
+  filter: blur(73px);
+}
+
+
+.feature-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+
+  i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      transition: transform 0.3s ease;
+  }
+
+  h3 {
+      font-family: 'Sora', sans-serif;
+      color: var(--text-on-light-bg);
+  }
+
+  p {
+      color: var(--text-on-light-bg);
+  }
+  
+  &:hover {
+      i {
+          transform: scale(1.1);
+      }
+  }
+}
+
+.feature-row {
+  @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 2rem;
+  }
+}
+
+/* Gradient highlight for headings */
+.highlight {
+  background: linear-gradient(90deg, var(--primary-orange), var(--accent-orange));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+
+// Grouped icon color rule
+.feature-item i,
+#advantages-section .card-body i,
+.step-item .step-icon-container i {
+  color: var(--primary-color);
+}
+
+/* Advantages Section */
+#advantages-section {
+  .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+      }
+  }
+}
+
+/* How It Works Section */
+.step-item {
+  .step-icon-container {
+      position: relative;
+      display: inline-block;
+      padding: 15px;
+      background-color: #e9ecef;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+  }
+
+  .step-number {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border: 2px solid white;
+  }
+}
+
+/* Products Section */
+.product-card {
+  position: relative;
+
+  img.card-thumb {
+      height: 200px;
+      object-fit: cover;
+      filter: grayscale(1);
+      transition: all 0.25s ease;
+  }
+
+  .soon-badge {
+      position: absolute;
+      width: 140px;
+      right: -25px;
+      top: 3px;
+      transform: rotate(23deg);
+      z-index: 999;
+  }
+
+  .price {
+      color: var(--primary-color);
+      font-weight: bold;
+  }
+
+  &.placeholder-card {
+      border-style: dashed;
+      border-color: #ced4da; /* Keeping placeholder distinct, or use a variable */
+  }
+
+  &:hover {
+      img.card-thumb {
+          filter: grayscale(0);
+      }
+  }
+}
+
+// This rule was originally separate and targeted a different structure, so it remains separate.
+.product-img img.card-thumb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff2e133;
+  z-index: 1;
+}
+
+
+/* Final CTA Section */
+#cta-final-section {
+  background-color: var(--dark-bg-color);
+
+  h2 {
+      color: var(--text-on-dark);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--text-on-dark-bg);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  a {
+      color: var(--footer-link-color);
+
+      &:hover {
+          text-decoration: underline !important;
+          color: var(--footer-link-hover-color);
+      }
+  }
+}
+
+.social-icons {
+  a {
+      color: var(--footer-link-color);
+      font-size: 1.5rem;
+      margin-right: 1rem;
+
+      &:last-child {
+          margin-right: 0;
+      }
+
+      &:hover {
+          color: var(--footer-link-hover-color);
+      }
+  }
+}
+
+/* Responsive Adjustments already nested or independent */
+
+.no-filter {
+  filter: none !important;
+}
+
+.text-bg-primary {
+  background-color: var(--text-bg-primary) !important;
+}
+
+.badge {
+  font-weight: 500;
+}
