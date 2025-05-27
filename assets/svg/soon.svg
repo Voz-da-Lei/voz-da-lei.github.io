@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="110.48628mm"
+   height="30.696819mm"
+   viewBox="0 0 110.48628 30.696819"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="soon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70644641"
+     inkscape:cx="-6.3699099"
+     inkscape:cy="183.31185"
+     inkscape:window-width="2560"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.27866,-118.54404)">
+    <g
+       id="g10"
+       transform="translate(-0.01500029,0.00621391)"
+       inkscape:export-filename="../img/soon-badge.png"
+       inkscape:export-xdpi="64.369987"
+       inkscape:export-ydpi="64.369987">
+      <path
+         style="fill:#f48c06;fill-opacity:1;stroke:none;stroke-width:0.12;stroke-linejoin:bevel"
+         d="m 52.29366,141.00946 12.974002,-22.47163 h 84.538278 l 12.974,22.47163 z"
+         id="path4" />
+      <text
+         xml:space="preserve"
+         style="font-size:13.7896px;line-height:1.25;font-family:Dyuthi;-inkscape-font-specification:Dyuthi;text-align:center;letter-spacing:1.1697px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.390888;stroke-linejoin:bevel"
+         x="106.19833"
+         y="133.57553"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="letter-spacing:1.1697px;fill:#ffffff;stroke:none;stroke-width:0.390888"
+           x="106.78319"
+           y="133.57553">EM BREVE</tspan></text>
+      <path
+         style="fill:#c77205;fill-opacity:1;stroke:none;stroke-width:0.12;stroke-linejoin:bevel"
+         d="m 52.29366,141.00946 4.748809,8.22519 8.225193,-8.22519 z"
+         id="path8"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="fill:#c77205;fill-opacity:1;stroke:none;stroke-width:0.119722;stroke-linejoin:bevel"
+         d="m 162.77994,141.00946 -4.71297,8.20104 -8.20103,-8.20104 z"
+         id="path10"
+         sodipodi:nodetypes="cccc" />
+    </g>
+  </g>
+</svg>
