@@ -8,15 +8,15 @@ layout: base
     <div class="container">
         <div class="row align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 mt-4 mt-lg-0">
-                <h1 class="fw-bold mb-3">Regimento Interno do TCU em Áudio – <span class="highlight">Com Resumos e Questões por IA</span></h1>
-                <h2 class="fs-4 mb-3">Domine o Regimento Interno do Tribunal de Contas da União de forma prática e eficiente. Ideal para otimizar seu tempo e turbinar sua preparação para o concurso do TCU!</h2>
+                <h1 class="fw-bold fs-2 mb-3">Regimento Interno do TCU em Áudio – <span class="highlight">Com Resumos e Questões por IA</span></h1>
+                <p class="lead mb-3">Domine o Regimento Interno do Tribunal de Contas da União de forma prática e eficiente. Ideal para otimizar seu tempo e turbinar sua preparação para o concurso do TCU!</p>
                 <ul class="list-unstyled mb-3">
                     <li><i class="bi bi-tag-fill me-2 text-primary"></i><strong>Preço:</strong> <span class="fs-4 fw-bold text-success">R$ 19,90</span></li>
                     <li><i class="bi bi-music-note-beamed me-2 text-primary"></i><strong>Formato:</strong> Áudio MP3 + Acesso online</li>
                     <li><i class="bi bi-clock-history me-2 text-primary"></i><strong>Duração Total Estimada:</strong> Aproximadamente X horas de áudio</li>
                     <li><i class="bi bi-shield-check me-2 text-primary"></i><strong>Atualização:</strong> Conforme Edital X / Lei Y</li>
                 </ul>
-                <a href="#" class="btn btn-primary btn-lg px-4 mb-2">🛒 Comprar Agora e Acelerar sua Aprovação!</a>
+                <a href="#" class="btn btn-primary btn-lg px-4 mb-2">Comprar agora!</a>
                 <div class="small text-muted">Compra segura | Acesso imediato após confirmação.</div>
             </div>
             <div class="col-lg-6 text-center">
@@ -29,16 +29,16 @@ layout: base
 <!-- Por que Essencial Section -->
 <section class="py-5">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center my-auto justify-content-between">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <h2 class="fw-bold mb-3">Transforme o Estudo do RI/TCU: <span class="highlight">De Denso e Cansativo para Flexível e Produtivo</span>.</h2>
+                <h2 class="fw-bold mb-3">Transforme o estudo do RI/TCU: de denso e cansativo para <span class="highlight">flexível e produtivo!</span></h2>
                 <p>O Regimento Interno do TCU é leitura obrigatória e extensa para quem sonha com uma vaga no Tribunal de Contas da União. São muitos artigos, detalhes e competências que precisam ser memorizados e compreendidos.</p>
                 <p>Com a <strong>Voz da Lei</strong>, você absorve esse conteúdo crucial de forma dinâmica. Ouça no trânsito, na academia, enquanto faz outras atividades ou simplesmente para revisar o que já estudou. Fixe os detalhes que fazem a diferença na prova!</p>
             </div>
-            <div class="col-lg-6">
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex align-items-start">
+            <div class="col-lg-5">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center">
                             <i class="bi bi-journal-check display-6 text-primary me-3"></i>
                             <div>
                                 <strong>Memorize Prazos e Competências</strong>
@@ -46,8 +46,10 @@ layout: base
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex align-items-start">
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center">
                             <i class="bi bi-diagram-3-fill display-6 text-primary me-3"></i>
                             <div>
                                 <strong>Entenda a Estrutura do Tribunal</strong>
@@ -55,8 +57,10 @@ layout: base
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex align-items-start">
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center">
                             <i class="bi bi-repeat display-6 text-primary me-3"></i>
                             <div>
                                 <strong>Ideal para Revisões Frequentes</strong>
@@ -75,17 +79,27 @@ layout: base
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="fw-bold mb-3">Qualidade Sonora Surpreendente para Seus Estudos</h2>
-                <p class="lead mb-4">Utilizamos a avançada tecnologia Text-to-Speech do Google para uma narração clara, natural e agradável. Nada de vozes robotizadas que dificultam a concentração!</p>
-                <div class="audio-player-container mx-auto mb-3" style="max-width: 600px;">
-                    <h5 class="fw-semibold">Demonstração – Regimento Interno do TCU em Áudio</h5>
-                    <audio controls class="w-100">
-                        <source src="/assets/audio/demo-ri-tcu.mp3" type="audio/mpeg">
-                        Seu navegador não suporta o elemento de áudio.
-                    </audio>
-                    <div class="small text-muted mt-2">Ouça um trecho de um artigo do RI/TCU e um exemplo de resumo por IA.</div>
+                <h2 class="fw-bold mb-3">Qualidade sonora <span class="highlight">surpreendente</span> para seus estudos</h2>
+                <p class="mb-4">Utilizamos a avançada tecnologia Text-to-Speech do Google para uma narração clara, natural e agradável. Nada de vozes robotizadas que dificultam a concentração!</p>
+
+                <div class="row mb-4">
+                    <div class="col-lg-12">
+                        <div class="audio-player-container mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <div class="grid"></div>
+                            <h5 class="fw-semibold text-on-dark-bg">
+                                <img src="/assets/svg/ai.svg" alt="AI" style="width: 40px; margin-right: 6px;">
+                                Demonstração <span class="highlight">#1</span>
+                            </h5>
+                            <p class="mb-3 text-on-dark-bg"><small>Ouça um trecho e comprove a nossa <span class="highlight">qualidade</span></small></p>
+                            <audio controls class="w-100 text-on-dark-bg">
+                                <!-- <source src="assets/audio/demonstracao.mp3" type="audio/mpeg"> -->
+                                Seu navegador não suporta o elemento de áudio.
+                            </audio>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" class="btn btn-primary btn-lg">✅ Gostou? Compre Agora por Apenas R$ 19,90!</a>
+                
+                <a href="#" class="btn btn-primary btn-lg">Gostou? Compre Agora por Apenas R$ 19,90!</a>
             </div>
         </div>
     </div>
@@ -228,10 +242,17 @@ layout: base
 <!-- Final CTA Section -->
 <section class="py-5 text-white text-center" id="cta-final-section">
     <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="display-5 fw-bold mb-3">Não Deixe o RI/TCU Ser um Obstáculo na Sua Aprovação!</h2>
-        <p class="lead mb-4">Adquira agora o <span class="highlight">Regimento Interno do TCU em Áudio com Resumos e Questões por IA</span> por apenas <strong>R$ 19,90</strong> e dê um passo decisivo rumo à sua vaga no Tribunal de Contas da União.</p>
-        <a href="#" class="btn btn-primary btn-lg px-5">🚀 Quero o RI/TCU em Áudio Agora!</a>
-        <div class="small mt-2">Compra 100% segura | Acesso vitalício ao material adquirido.</div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="grid z-1"></div>
+                <h2 class="display-5 fs-3 fw-bold mb-3">Não deixe que o RI/TCU seja um obstáculo na sua <span class="highlight">aprovação</span>!</h2>
+                <p class="mb-4">Adquira agora o <span class="highlight">Regimento Interno do TCU em Áudio com Resumos e Questões por IA</span> por apenas <strong>R$ 19,90</strong> e dê um passo decisivo rumo à sua vaga no Tribunal de Contas da União.</p>
+                <a href="#" class="btn btn-primary btn-lg px-5">🚀 Quero o RI/TCU em Áudio Agora!</a>
+                <p class="small mt-2 text-secondary">
+                    Compra 100% segura | Acesso vitalício ao material adquirido.
+                </p>
+            </div>
+        </div>
     </div>
 </section>
 
